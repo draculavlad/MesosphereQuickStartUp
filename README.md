@@ -17,7 +17,7 @@ chmod +x mesos-master-setup.sh
 ```shell
 wget https://raw.githubusercontent.com/draculavlad/SetUpMesosphereOnCentos7WithServiceDiscovery/master/mesos-slave-setup.sh
 export master_node_ip="{your mesos master ip}"
-sed -i "s|master_node_ip=|master_node_ip=$master_node_ip|g" mesos-slave-setup.sh
+sed -i "s|master_node_ip=|master_node_ip=\"$master_node_ip\"|g" mesos-slave-setup.sh
 chmod +x mesos-slave-setup.sh
 ./mesos-slave-setup.sh
 ```
