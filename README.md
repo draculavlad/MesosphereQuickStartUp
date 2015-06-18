@@ -11,8 +11,8 @@ wget https://raw.githubusercontent.com/draculavlad/SetUpMesosphereOnCentos7WithS
 chmod +x mesos-master-setup.sh
 ./mesos-master-setup.sh
 ```
-
-### Things you need to know before you try to set up your slave node###
+## setup slave## 
+* Things you need to know before you try to set up your slave node###
 * let's just assume that your master ip address would be 192.168.1.1
 ```shell
 wget https://raw.githubusercontent.com/draculavlad/SetUpMesosphereOnCentos7WithServiceDiscovery/master/mesos-slave-setup.sh
